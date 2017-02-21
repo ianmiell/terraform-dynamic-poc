@@ -13,6 +13,6 @@ variable "ami" {
   default = "ami-0b33d91d"
 }
 
-variable "test_id" {
-  description = "ID of test"
+variable "dynamic_env_id" {
+  description = "ID of environment"
 }

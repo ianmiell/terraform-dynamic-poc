@@ -7,7 +7,7 @@ pushd ${ID}
 cat > main.tf << END
 module "dynamicenv" {
   source             = "../modules/dynamicenv"
-  test_id            = "${TEST_ID}"
+  dynamic_env_id     = "${ID}"
 }
 END
 terraform get
