@@ -13,9 +13,9 @@ variable "ami" {
   default = "ami-0b33d91d"
 }
 
-variable "vpc_id" {
-  description = "VPC id"
-  default = "vpc-9c885ffa"
+variable "subnet_id" {
+  description = "Subnet id"
+  default = "subnet-1267ca2e"
 }
 
 variable "dynamic_env_id" {
