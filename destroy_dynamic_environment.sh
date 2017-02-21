@@ -14,7 +14,7 @@ TODAY=$(date +%j)
 TODAY=${TODAY##+(0)}
 
 # Go through all the environment folders, and terraform destroy, git remove and remove the folder.
-for dir in $(find dynamic_environment_* -type d -maxdepth 0)
+for dir in $(find dynamic_environment_* -maxdepth 0 -type d)
 do
 	# Remove the folder prefix.
 	dir_day=${dir##*_}
