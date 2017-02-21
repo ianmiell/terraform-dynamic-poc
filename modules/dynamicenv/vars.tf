@@ -13,6 +13,11 @@ variable "ami" {
   default = "ami-0b33d91d"
 }
 
+variable "vpc_id" {
+  description = "VPC id"
+  default = "vpc-9c885ffa"
+}
+
 variable "dynamic_env_id" {
   description = "ID of environment"
 }
